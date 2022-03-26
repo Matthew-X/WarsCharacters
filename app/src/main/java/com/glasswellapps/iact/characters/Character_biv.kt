@@ -9,6 +9,7 @@ class Character_biv : Character {
         //default values
         name = "Biv Bodhrik"
         name_short = "biv"
+        index = 0
         type = "Hero"
         defence_dice = "black"
 

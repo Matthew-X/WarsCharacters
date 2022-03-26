@@ -22,7 +22,6 @@
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:foreground="?attr/selectableItemBackgroundBorderless"
-            android:onClick="onBackgroundInterior"
             app:cardCornerRadius="2dp">
 
             <ImageView
@@ -53,7 +52,6 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:foreground="?attr/selectableItemBackgroundBorderless"
-            android:onClick="onBackgroundDesert"
             app:cardCornerRadius="2dp">
 
             <ImageView
@@ -85,7 +83,6 @@
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:foreground="?attr/selectableItemBackgroundBorderless"
-            android:onClick="onBackgroundJungle"
             app:cardCornerRadius="2dp">
 
             <ImageView
@@ -117,7 +114,6 @@
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:foreground="?attr/selectableItemBackgroundBorderless"
-            android:onClick="onBackgroundSnow"
             app:cardCornerRadius="2dp">
 
             <ImageView
@@ -149,7 +145,6 @@
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:foreground="?attr/selectableItemBackgroundBorderless"
-            android:onClick="onBackgroundSnow"
             app:cardCornerRadius="2dp">
 
             <ImageView
@@ -181,7 +176,6 @@
             android:layout_height="match_parent"
             android:layout_margin="5dp"
             android:foreground="?attr/selectableItemBackgroundBorderless"
-            android:onClick="onBackgroundSnow"
             app:cardCornerRadius="2dp">
 
             <ImageView

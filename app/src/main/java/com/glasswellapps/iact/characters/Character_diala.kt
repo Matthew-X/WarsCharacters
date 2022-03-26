@@ -9,6 +9,7 @@ class Character_diala : Character {
         //default values
         name = "Diala Passil"
         name_short = "diala"
+        index = 3
         type = "Hero"
         defence_dice = "white"
 
@@ -70,23 +71,28 @@ class Character_diala : Character {
     //TODO alter for reward, duplicates, tier
     override fun updateCharacterImages(context: Context){
         super.updateCharacterImages(context)
-
+        layerLightSaber = null
         //card9 tier images
         if(xpCardsEquipped[8]){
             var card9Image = loadCardTierImage(context, tier, "card9")
             if (card9Image != null) {
                 currentImage = card9Image
+                layerLightSaber = getBitmap(context,
+                    "characters/diala/images/lightsaber_card9.png");
             }
-
         }
         if(tier == 3) {
             if (ancientLightSaber) {
                 if(xpCardsEquipped[8]){
                     currentImage = getBitmap(context,
                         "characters/diala/images/tier3image_ancient_light_saber_card9.png");
+                    layerLightSaber = getBitmap(context,
+                        "characters/diala/images/lightsaber_ancient_card9.png");
                 }
                 else{
                     currentImage = getBitmap(context,"characters/diala/images/tier3image_ancient_light_saber.png");
+                    layerLightSaber = getBitmap(context,
+                        "characters/diala/images/lightsaber_ancient.png");
                 }
             }
         }

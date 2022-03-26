@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.glasswellapps.iact">
+    package="com.glasswellapps.iact" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"  android:usesPermissionFlags="neverForLocation" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="false"
@@ -8,34 +20,41 @@
         android:icon="@mipmap/ic_launcher"
         android:label="Character Tracker"
         android:largeHeap="true"
-        android:screenOrientation="sensorPortrait"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="sensorPortrait"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ImperialAssault">
-
-        <activity android:name=".CreateScreen"
-            android:screenOrientation="sensorPortrait"/>
-        <activity android:name=".inventory.RewardsScreen"
-            android:screenOrientation="sensorPortrait"/>
-        <activity android:name=".LoadScreen"
-            android:windowSoftInputMode="adjustNothing"
-            android:screenOrientation="sensorPortrait"/>
-        <activity android:name=".inventory.RangedScreen"
-            android:screenOrientation="sensorPortrait"/>
-        <activity android:name=".inventory.MeleeScreen"
-            android:screenOrientation="sensorPortrait"/>
-        <activity android:name=".inventory.AccScreen"
-            android:screenOrientation="sensorPortrait"/>
-        <activity android:name=".inventory.ArmorScreen"
-            android:screenOrientation="sensorPortrait"/>
-        <activity android:name=".CharacterScreen"
-            android:screenOrientation="sensorPortrait"/>
-        <activity android:name=".Characters_list"
-            android:screenOrientation="sensorPortrait"/>
-        <activity android:name=".MainActivity"
-            android:screenOrientation="sensorPortrait">
+        android:theme="@style/Theme.ImperialAssault" >
+        <activity
+            android:name=".NewHeroScreen"
+            android:exported="false" />
+        <activity
+            android:name=".multiplayer.ImperialScreen"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".multiplayer.RebelScreen"
+            android:screenOrientation="sensorLandscape" />
+        <activity
+            android:name=".CreateScreen"
+            android:screenOrientation="sensorPortrait" />
+        <activity android:name=".inventory.RewardsScreen" />
+        <activity
+            android:name=".LoadScreen"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".inventory.RangedScreen" />
+        <activity android:name=".inventory.MeleeScreen" />
+        <activity android:name=".inventory.AccScreen" />
+        <activity android:name=".inventory.ArmorScreen" />
+        <activity android:name=".character_screen.XPScreen" />
+        <activity
+            android:name=".character_screen.CharacterScreen"
+            android:screenOrientation="sensorPortrait" />
+        <activity android:name=".Characters_list" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="sensorPortrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

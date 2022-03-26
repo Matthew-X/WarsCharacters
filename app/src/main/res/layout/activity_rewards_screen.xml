@@ -50,7 +50,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -63,6 +64,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -71,7 +73,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -84,6 +87,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -92,7 +96,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -105,6 +110,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -119,7 +125,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -132,6 +139,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -140,7 +148,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -153,6 +162,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -161,7 +171,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -174,6 +185,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -188,7 +200,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -201,6 +214,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -209,7 +223,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -222,6 +237,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -230,7 +246,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -243,6 +260,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -257,7 +275,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -270,6 +289,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -278,7 +298,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -291,6 +312,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -299,7 +321,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -312,6 +335,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -326,7 +350,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -339,6 +364,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -347,7 +373,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -360,6 +387,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -368,7 +396,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -381,6 +410,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -395,7 +425,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -408,6 +439,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -416,7 +448,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -429,6 +462,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -437,7 +471,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -450,6 +485,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -464,7 +500,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -477,6 +514,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -485,7 +523,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -498,6 +537,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -506,7 +546,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -519,6 +560,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -533,7 +575,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -546,6 +589,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -554,7 +598,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -567,6 +612,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -575,7 +621,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -588,6 +635,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -602,7 +650,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -615,6 +664,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -623,8 +673,9 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
                     android:visibility="invisible"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -637,6 +688,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -645,8 +697,9 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
                     android:visibility="invisible"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -659,6 +712,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -670,7 +724,7 @@
         android:id="@+id/imageView36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/screen_background"
+        android:background="@drawable/border_portrait"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

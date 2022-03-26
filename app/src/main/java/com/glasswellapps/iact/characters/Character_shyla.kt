@@ -12,6 +12,7 @@ class Character_shyla : Character {
         //default values
         name = "Shyla Varad"
         name_short = "shyla"
+        index = 17
         type = "Hero"
         defence_dice = "black"
 

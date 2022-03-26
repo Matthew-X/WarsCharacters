@@ -9,6 +9,7 @@ class Character_kotun : Character {
         //default values
         name = "Ko-Tun Feralo"
         name_short = "kotun"
+        index = 10
         type = "Hero"
         defence_dice = "black"
 

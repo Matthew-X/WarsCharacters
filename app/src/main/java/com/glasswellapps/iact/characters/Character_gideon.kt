@@ -9,6 +9,7 @@ class Character_gideon : Character {
         //default values
         name = "Gideon Argus"
         name_short = "gideon"
+        index = 7
         type = "Hero"
         defence_dice = "black"
 

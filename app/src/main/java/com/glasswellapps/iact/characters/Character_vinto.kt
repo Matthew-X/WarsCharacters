@@ -10,6 +10,7 @@ class Character_vinto : Character {
         //default values
         name = "Vinto Hreeda"
         name_short = "vinto"
+        index = 20
         type = "Hero"
         defence_dice = "white"
 

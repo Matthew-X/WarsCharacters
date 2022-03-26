@@ -9,6 +9,7 @@ class Character_gaarkhan : Character {
         //default values
         name = "Gaarkhan"
         name_short = "gaarkhan"
+        index = 6
         type = "Hero"
         defence_dice = "black"
 

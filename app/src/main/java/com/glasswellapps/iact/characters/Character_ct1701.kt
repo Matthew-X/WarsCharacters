@@ -17,6 +17,7 @@ class Character_ct1701 : Character {
         //default values
         name = "CT-1701"
         name_short = "ct1701"
+        index = 1
         type = "Hero"
         defence_dice = "black"
 

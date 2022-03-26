@@ -14,8 +14,6 @@ interface CharacterDAO {
     @Query("SELECT * FROM characterdata WHERE fileName LIKE :fileName AND characterName LIKE :characterName")
     fun loadAllByName(fileName:String,characterName:String): List<CharacterData>
 
-
-
     @Insert
     fun insertAll(vararg fileName: CharacterData)
 
@@ -31,5 +29,4 @@ interface CharacterDAO {
 
     @Query("SELECT id FROM characterdata WHERE rowid = :rowId")
     fun getPrimaryKey(rowId:Long):Int
-
 }

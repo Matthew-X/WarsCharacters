@@ -4,13 +4,91 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Documents/AndroidStudioProjects/WarsCharacters/app/src/main/res/layout/credits_to_us.xml" value="0.23641304347826086" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/drawable/button_ripple.xml" value="0.14947916666666666" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout-land/activity_acc_screen.xml" value="0.264" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout-land/activity_armor_screen.xml" value="0.21510416666666668" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout-land/activity_characters_list.xml" value="0.21510416666666668" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout-land/activity_create_xp_screen.xml" value="0.21510416666666668" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout-land/activity_load_screen.xml" value="0.264" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout-land/activity_melee_screen.xml" value="0.2" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout-land/activity_new_hero_screen.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout-land/activity_ranged_screen.xml" value="0.2" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout-land/activity_rewards_screen.xml" value="0.21510416666666668" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout-land/dialog_show_card.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout-land/dialog_show_condition_card.xml" value="0.152" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout-land/landscape.xml" value="0.21510416666666668" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout-land/screen_xp_select.xml" value="0.264" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/activity_acc_screen.xml" value="0.4" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/activity_armor_screen.xml" value="0.264" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/activity_character_screen.xml" value="0.2" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/activity_characters_list.xml" value="0.25" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/activity_create_screen.xml" value="0.25" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/activity_create_xp_screen.xml" value="0.536" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/activity_imperial_screen.xml" value="0.4" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/activity_load_screen.xml" value="0.264" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/activity_main.xml" value="0.128" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/activity_melee_screen.xml" value="0.2" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/activity_new_hero_screen.xml" value="0.2" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/activity_new_screen.xml" value="0.25" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/activity_ranged_screen.xml" value="0.176" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/activity_rebel_screen.xml" value="0.4" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/activity_rewards_screen.xml" value="0.152" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/credits_to_us.xml" value="0.4" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_alien_sounds.xml" value="0.25" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_assist.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_background.xml" value="0.234375" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_bio.xml" value="0.536" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_bluetooth_devices.xml" value="0.7048458149779736" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_conditions.xml" value="0.536" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_creature_sounds.xml" value="0.6" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_edit_save.xml" value="0.6" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_end_activation.xml" value="0.72" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_gameover.xml" value="0.2" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_humanoid_sounds.xml" value="0.176" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_imperial_add_player.xml" value="0.176" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_imperial_options.xml" value="0.536" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_multiplayer_options.xml" value="0.4" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_next_mission.xml" value="1.2" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_no_savefiles_found.xml" value="0.1546875" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_options.xml" value="0.1546875" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_quick_view.xml" value="0.4" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_quick_view_button.xml" value="0.1546875" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_rest.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_save.xml" value="0.4" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_show_card.xml" value="0.2" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_show_condition_card.xml" value="0.264" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_sounds_creature.xml" value="0.264" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_sounds_humanoid.xml" value="0.4" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_unwound.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/dialog_victory.xml" value="0.264" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/empty_item.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/fragment_bluetooth_character.xml" value="0.536" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/fragment_multiplayer_character.xml" value="0.4" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/grid_item.xml" value="0.234375" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/item_device.xml" value="0.4" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/item_fragment.xml" value="0.2391304347826087" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/panel_imperial.xml" value="0.25" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/panel_rebel.xml" value="0.25" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/save_load_item.xml" value="0.4" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/screen_new.xml" value="0.136" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/screen_settings.xml" value="0.4" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/screen_stats.xml" value="0.4" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/screen_xp_select.xml" value="0.2" />
+        <entry key="..\:/Users/manhk/IAandroid/WarsCharacters/app/src/main/res/layout/toast_no_actions_left.xml" value="0.2391304347826087" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.536" />
+      </ProjectState>
+    </option>
   </component>
 </project>

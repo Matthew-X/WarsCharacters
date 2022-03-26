@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/character_select_background">
+
+    <ImageView
+        android:id="@+id/separator42"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout16"
+        app:srcCompat="@drawable/separator" />
+
+    <TextView
+        android:id="@+id/textView61"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/agency_fb"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:text="SOUND-CREATURE "
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.63" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:foreground="@drawable/border_portrait"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView54"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/border_side" />
+
+    <ImageView
+        android:id="@+id/imageView55"
+        android:layout_width="0dp"
+        android:layout_height="15dp"
+        android:rotation="180"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout7"
+        app:srcCompat="@drawable/border_side" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/imperial_alien_sounds"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/sound_rancor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/portrait_rancor" />
+
+            <ImageView
+                android:id="@+id/sound_wampa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/portrait_wampa" />
+
+            <ImageView
+                android:id="@+id/sound_bantha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/portrait_bantha" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/death_rancor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/portrait_rancor_death" />
+
+            <ImageView
+                android:id="@+id/death_wampa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/portrait_wampa_death" />
+
+            <ImageView
+                android:id="@+id/death_bantha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/portrait_bantha_death" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

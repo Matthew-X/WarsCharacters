@@ -23,15 +23,28 @@
             android:background="@drawable/character_select_background">
 
             <ImageView
-                android:id="@+id/imageView37"
+                android:id="@+id/imageView50"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:background="@drawable/screen_background"
                 android:rotation="180"
+                android:scaleType="centerCrop"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/character_select_background" />
+
+            <ImageView
+                android:id="@+id/imageView37"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:rotation="180"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/border_portrait" />
 
             <ImageView
                 android:id="@+id/imageView39"

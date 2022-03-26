@@ -11,11 +11,13 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/saveSlots_recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
         android:alpha="0"
+        app:layout_constraintBottom_toTopOf="@+id/delete_button_holder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -35,7 +37,7 @@
         android:text="EDIT"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/pageNumber"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +56,7 @@
         android:text="ALL"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="normal"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/pageNumber"
@@ -66,13 +68,13 @@
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="30dp"
         android:layout_weight="0"
         android:fontFamily="@font/agency_fb"
         android:text="1"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="18sp"
+        android:textSize="24sp"
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -102,10 +104,11 @@
         app:layout_constraintTop_toTopOf="@+id/pageNumber" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView8"
+        android:id="@+id/delete_button_holder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/pageNumber"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -122,20 +125,22 @@
             android:shadowRadius="10"
             android:textColor="@color/white"
             android:textSize="24sp"
-            android:visibility="gone" />
+            android:visibility="visible" />
     </androidx.cardview.widget.CardView>
 
     <FrameLayout
         android:id="@+id/border"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/screen_background"
+        android:background="@drawable/border_portrait"
         android:elevation="10dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
     </FrameLayout>
 
@@ -155,7 +160,7 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/working_icon" />
+            app:srcCompat="@drawable/rebel_icon" />
     </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

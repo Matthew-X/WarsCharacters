@@ -9,6 +9,7 @@ class Character_mhd19 : Character {
         //default values
         name = "MHD-19"
         name_short = "mhd19"
+        index = 13
         type = "Hero"
         defence_dice = "black"
 

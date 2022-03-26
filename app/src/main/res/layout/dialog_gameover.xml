@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameover_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <ImageButton
+        android:id="@+id/continue_button"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="false"
+        android:background="@drawable/save_file_back_2"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hapticFeedbackEnabled="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/imageView56"
+        app:layout_constraintStart_toStartOf="@+id/imageView56"
+        app:layout_constraintTop_toBottomOf="@+id/imageView56"
+        app:srcCompat="?attr/selectableItemBackgroundBorderless" />
+
+    <TextView
+        android:id="@+id/game_over_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/agency_fb"
+        android:shadowColor="@color/black"
+        android:shadowRadius="5"
+        android:text="CONTINUE"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/continue_button"
+        app:layout_constraintEnd_toEndOf="@+id/continue_button"
+        app:layout_constraintStart_toStartOf="@+id/continue_button"
+        app:layout_constraintTop_toTopOf="@+id/continue_button" />
+
+    <ImageView
+        android:id="@+id/imageView56"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31"
+        app:srcCompat="@drawable/victory_logo" />
+
+    <TextView
+        android:id="@+id/game_over_reset2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="@font/agency_fb"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:text="IMPERIAL\nVICTORY"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView56"
+        app:layout_constraintEnd_toEndOf="@+id/imageView56"
+        app:layout_constraintStart_toStartOf="@+id/imageView56"
+        app:layout_constraintTop_toTopOf="@+id/imageView56" />
+</androidx.constraintlayout.widget.ConstraintLayout>

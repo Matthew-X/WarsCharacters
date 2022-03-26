@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/load_view_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_landscape"
+    tools:context=".LoadScreen">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/saveSlots_recyclerView"
+        android:layout_width="400dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toTopOf="@+id/delete_button_holder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/edit_toggle"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="30dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/agency_fb"
+        android:gravity="center"
+        android:onClick="onToggleEdit"
+        android:text="EDIT"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/pageNumber"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pageNumber" />
+
+    <TextView
+        android:id="@+id/all_toggle"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="30dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/agency_fb"
+        android:gravity="center"
+        android:onClick="onToggleAll"
+        android:text="ALL"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/pageNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pageNumber" />
+
+    <TextView
+        android:id="@+id/pageNumber"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="0"
+        android:fontFamily="@font/agency_fb"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/separator40"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/pageNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/separator" />
+
+    <ImageView
+        android:id="@+id/load_prev_button"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_weight="0"
+        android:adjustViewBounds="true"
+        android:alpha="0.1"
+        android:onClick="onPreviousPage"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"
+        android:rotation="90"
+        android:scaleType="fitXY"
+        android:scaleX="-1"
+        app:layout_constraintBottom_toBottomOf="@+id/saveSlots_recyclerView"
+        app:layout_constraintEnd_toStartOf="@+id/saveSlots_recyclerView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/saveSlots_recyclerView"
+        app:srcCompat="@drawable/extension_down" />
+
+    <ImageView
+        android:id="@+id/load_next_button"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_weight="0"
+        android:adjustViewBounds="true"
+        android:alpha="0.1"
+        android:onClick="onNextPage"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"
+        android:rotation="-90"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/saveSlots_recyclerView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/saveSlots_recyclerView"
+        app:layout_constraintTop_toTopOf="@+id/saveSlots_recyclerView"
+        app:srcCompat="@drawable/extension_down" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/delete_button_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/pageNumber"
+        app:layout_constraintEnd_toStartOf="@+id/all_toggle"
+        app:layout_constraintStart_toEndOf="@+id/pageNumber"
+        app:layout_constraintTop_toTopOf="@+id/pageNumber">
+
+        <TextView
+            android:id="@+id/delete_button"
+            android:layout_width="170dp"
+            android:layout_height="44dp"
+            android:background="@drawable/save_file_back"
+            android:fontFamily="@font/agency_fb"
+            android:gravity="center"
+            android:onClick="onDelete"
+            android:shadowColor="@color/black"
+            android:shadowRadius="10"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="visible" />
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_landscape"
+        android:elevation="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/working_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/shadow"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/working_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/rebel_icon" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,15 +6,20 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
+import android.util.DisplayMetrics
 import android.view.View
 import android.view.WindowManager
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.glasswellapps.iact.character_screen.CharacterBuilder
+import com.glasswellapps.iact.character_screen.CharacterScreen
 import com.glasswellapps.iact.effects.Sounds
+import com.glasswellapps.iact.loading.CharacterHolder
 import kotlinx.android.synthetic.main.activity_characters_list.*
 
 class Characters_list : AppCompatActivity() {
     var charactersImage = arrayListOf<ImageView>()
+    var width = 0f
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setAnimation()
@@ -23,7 +28,9 @@ class Characters_list : AppCompatActivity() {
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
         );
-
+        val displayMetrics = DisplayMetrics()
+        windowManager.defaultDisplay.getMetrics(displayMetrics)
+        width = displayMetrics.widthPixels.toFloat()/displayMetrics.density
         //Characters list for List view to choose characters
 
         charactersImage = arrayListOf<ImageView>(
@@ -112,7 +119,7 @@ class Characters_list : AppCompatActivity() {
                 println("ANIMATED LOAD")
                 var anim = ObjectAnimator.ofFloat(
                     sortedCharArray[i],
-                    "translationX", -(i.toFloat()/2 + 1) *sortedCharArray[i].width.toFloat(),
+                    "translationX", -(i.toFloat()/2 + 1) *width,
                     0f
                 )
                 anim.duration = ((i.toFloat()/2 + 1)  * 150).toLong()
@@ -138,23 +145,31 @@ class Characters_list : AppCompatActivity() {
     //Load layout for selected character (pointing out it's tag to note which assets to load)
 
     fun onSelect(view: View) {
+        val characterName = view.tag.toString()
+        if(CharacterHolder.isInParty(characterName)) {
+            Sounds.negativeSound();
+            ShortToast.show(this, "ALREADY IN PARTY")
+            return
+        }
         Sounds.selectSound()
         for(i in 0..charactersImage.count()-1){
             if(charactersImage[i] != view){
                 charactersImage[i].alpha = 0f
             }
         }
-        if(Loaded.getCharacter() != null) {
-            wipeSelectedCharacter()
+        CharacterHolder.setActiveCharacter(CharacterBuilder.create(characterName,this))
+        var from: String = intent.getStringExtra("from").toString()
+
+        when(from){
+            "imperial"-> onBackPressed()
+            "main"-> toCharacterScreen()
         }
+    }
+
+    private fun toCharacterScreen(){
         val intent = Intent(this, CharacterScreen::class.java)
-        intent.putExtra("CharacterName", view.tag.toString())
-        intent.putExtra("Load", false)
-
-
         startActivity(intent);
         finish()
-
     }
 
     fun onSelectCustom(view: View) {
@@ -163,7 +178,7 @@ class Characters_list : AppCompatActivity() {
 
                 charactersImage[i].alpha = 0f
         }
-        if(Loaded.getCharacter() != null) {
+        if(CharacterHolder.getActiveCharacter() != null) {
             wipeSelectedCharacter()
         }
         val intent = Intent(this, CharacterScreen::class.java)
@@ -180,19 +195,19 @@ class Characters_list : AppCompatActivity() {
 
     fun wipeSelectedCharacter(){
 
-        Loaded.getCharacter().currentImage!!.recycle()
-        for (i in 0..Loaded.getCharacter().xpCardImages.size-1) {
-            if (Loaded.getCharacter().xpCardImages[i] != null) {
-                Loaded.getCharacter().xpCardImages!![i].recycle()
+        CharacterHolder.getActiveCharacter().currentImage!!.recycle()
+        for (i in 0..CharacterHolder.getActiveCharacter().xpCardImages.size-1) {
+            if (CharacterHolder.getActiveCharacter().xpCardImages[i] != null) {
+                CharacterHolder.getActiveCharacter().xpCardImages!![i].recycle()
             }
         }
-        if (Loaded.getCharacter().power != null) {
-            Loaded.getCharacter().power!!.recycle()
-            Loaded.getCharacter().power_wounded!!.recycle()
+        if (CharacterHolder.getActiveCharacter().power != null) {
+            CharacterHolder.getActiveCharacter().power!!.recycle()
+            CharacterHolder.getActiveCharacter().power_wounded!!.recycle()
         }
-        if (Loaded.getCharacter().portraitImage != null) {
-            Loaded.getCharacter().portraitImage = null
+        if (CharacterHolder.getActiveCharacter().portraitImage != null) {
+            CharacterHolder.getActiveCharacter().portraitImage = null
         }
-        Loaded.setCharacter(null)
+        CharacterHolder.setActiveCharacter(null)
     }
 }

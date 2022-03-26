@@ -9,6 +9,7 @@ class Character_saska : Character {
         //default values
         name = "Saska Teft"
         name_short = "saska"
+        index = 16
         type = "Hero"
         defence_dice = "white"
 

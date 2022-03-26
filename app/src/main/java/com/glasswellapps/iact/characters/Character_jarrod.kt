@@ -18,6 +18,7 @@ class Character_jarrod : Character {
         //default values
         name = "Jarrod Kelvin"
         name_short = "jarrod"
+        index = 8
         type = "Hero"
         defence_dice = "black"
 

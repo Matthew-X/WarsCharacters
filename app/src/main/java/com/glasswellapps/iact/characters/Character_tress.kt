@@ -9,6 +9,7 @@ class Character_tress : Character {
         //default values
         name = "Tress Hacnua"
         name_short = "tress"
+        index = 18
         type = "Hero"
         defence_dice = "white"
 

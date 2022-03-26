@@ -11,12 +11,13 @@ import com.glasswellapps.iact.inventory.Item
 import com.glasswellapps.iact.inventory.Items
 import com.glasswellapps.iact.R
 import com.glasswellapps.iact.effects.Sounds
-import kotlinx.android.synthetic.main.toast_no_actions_left.view.*
+import kotlinx.android.synthetic.main.toast.view.*
 import java.io.InputStream
 
 open class Character {
     var name = ""
     var name_short = ""
+    var index = 0
     var file_name = "autosave"
     var id = -1
 
@@ -57,6 +58,7 @@ open class Character {
     var currentImage:Bitmap? = null
     var layer2:Bitmap? = null
     var layer1:Bitmap? = null
+    var layerLightSaber: Bitmap? = null
     var companionImage:Bitmap? = null
     var glowImage:Bitmap?=null
 
@@ -79,7 +81,11 @@ open class Character {
     var portraitRow = 0
     var portraitCol = 0
 
-
+    //immediate state
+    var actionsLeft = 0
+    var isActivated = false
+    var isWounded = false;
+    var lastEffect = 0;
 
     //****************************************************************************************************
     //region To Save
@@ -226,6 +232,29 @@ open class Character {
         return image
     }
 
+    open fun clearImages(){
+        power?.recycle()
+        power_wounded?.recycle()
+        currentImage?.recycle()
+        layer2?.recycle()
+        layer1?.recycle()
+        layerLightSaber?.recycle()
+        companionImage?.recycle()
+        glowImage?.recycle()
+        startingMeleeWeapon?.recycle()
+        startingRangedWeapon?.recycle()
+
+        power=null
+        power_wounded=null
+        currentImage=null
+        layer2=null
+        layer1=null
+        layerLightSaber=null
+        companionImage=null
+        glowImage=null
+        startingMeleeWeapon=null
+        startingRangedWeapon=null
+    }
 
     open fun updateCharacterImages(context:Context){
         ancientLightSaber = false
@@ -310,10 +339,10 @@ open class Character {
         if((xpSpent>=9 && (tier2Equipped >=1|| tier3Equipped >=1))||xpSpent>=11){
             tier = 3
         }
-        else if((xpSpent>=6 && tier2Equipped >=1)||xpSpent >= 8){
+        else if((xpSpent>=6 && (tier2Equipped >=1 || tier3Equipped >=1))||xpSpent >= 8){
             tier = 2
         }
-        else if((xpSpent>=3 && tier1Equipped>=1)||xpSpent >= 5) {
+        else if((xpSpent>=3 && (tier1Equipped >=1 || tier2Equipped >=1 || tier3Equipped >=1)) ||xpSpent >= 5) {
             tier = 1
         }
     }
@@ -407,7 +436,7 @@ open class Character {
         val toast = Toast(context)
         toast!!.duration = Toast.LENGTH_SHORT
         val view = context.layoutInflater.inflate(
-            R.layout.toast_no_actions_left,
+            R.layout.toast,
             null,
             false
         )
@@ -423,6 +452,25 @@ open class Character {
         toast!!.view = view
         toast!!.setGravity(Gravity.CENTER, 0, 0)
         toast!!.show()
+    }
+
+    fun getLevel(): Int {
+        var level = 5
+        when {
+            xpSpent <= 1 -> {
+                level = 1
+            }
+            xpSpent <= 4 -> {
+                level = 2
+            }
+            xpSpent <= 7 -> {
+                level = 3
+            }
+            xpSpent <= 9 -> {
+                level = 4
+            }
+        }
+        return level
     }
 
     var damageAnimSetting = true

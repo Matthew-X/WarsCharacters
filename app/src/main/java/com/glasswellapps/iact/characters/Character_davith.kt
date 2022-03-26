@@ -8,6 +8,7 @@ class Character_davith : Character {
         //default values
         name = "Davith Elso"
         name_short = "davith"
+        index = 2
         type = "Hero"
         defence_dice = "white"
 
@@ -35,8 +36,8 @@ class Character_davith : Character {
         wounded = 0
 
         totalXP = 0
-        xpEndurances = intArrayOf(0, 0, 0, 0, 0, 0, 0, 0, 0)
-        xpHealths = intArrayOf(0, 0, 0, 0, 0, 0, 0, 0, 0)
+        xpEndurances = intArrayOf(0, 0, 0, 0, 0, 0, 0, 1, 0)
+        xpHealths = intArrayOf(0, 0, 0, 0, 0, 0, 0, 3, 0)
         xpSpeeds = intArrayOf(0, 0, 0, 0, 0, 0, 0, 0, 0)
         xpItems = intArrayOf(-1,-1,-1,-1,-1,92,-1,-1,91)
 
@@ -68,47 +69,74 @@ class Character_davith : Character {
     override fun updateCharacterImages(context: Context) {
         super.updateCharacterImages(context)
         //card6 and card9 combined tier images
-        if (xpCardsEquipped[5] && xpCardsEquipped[8]) {
+        layerLightSaber = null
+
+        val card6 = xpCardsEquipped[5] && !ancientLightSaber && !xpCardsEquipped[8]
+        val card9 = !xpCardsEquipped[5] && !ancientLightSaber && xpCardsEquipped[8]
+        val ancient = !xpCardsEquipped[5] && ancientLightSaber && !xpCardsEquipped[8]
+        val card6Card9 = xpCardsEquipped[5] && !ancientLightSaber && xpCardsEquipped[8]
+        val card6Ancient = xpCardsEquipped[5] && ancientLightSaber && !xpCardsEquipped[8]
+        val card9Ancient = !xpCardsEquipped[5] && ancientLightSaber && xpCardsEquipped[8]
+        val card6Card9Ancient = xpCardsEquipped[5] && ancientLightSaber && xpCardsEquipped[8]
+        if (card6Card9) {
             var card69Image = loadCardTierImage(context, tier, "card6_card9")
             if (card69Image != null) {
                 currentImage = card69Image
+                layerLightSaber = getBitmap(context,
+                    "characters/davith/images/lightsaber_card6.png");
+            }
+        }
+        if (card6Card9Ancient) {
+            var card69Image = loadCardTierImage(context, tier, "card6_card9")
+            if (card69Image != null) {
+                currentImage = card69Image
+                layerLightSaber = getBitmap(context,
+                    "characters/davith/images/lightsaber_card6.png");
             }
         }
         //card6 tier images
-        else if (xpCardsEquipped[5]) {
-            if(ancientLightSaber){
-                var card6Image = loadCardTierImage(context, tier, "card6_ancient_light_saber")
-                if (card6Image != null) {
-                    currentImage = card6Image
-                }
-            }
-            else {
-                var card6Image = loadCardTierImage(context, tier, "card6")
-                if (card6Image != null) {
-                    currentImage = card6Image
-                }
-            }
+        if (card6Ancient) {
 
+            var card6Image = loadCardTierImage(context, tier, "card6_ancient_light_saber")
+            if (card6Image != null) {
+                currentImage = card6Image
+                if (!xpCardsEquipped[8])
+                    layerLightSaber = getBitmap(
+                        context,
+                        "characters/davith/images/lightsaber_ancient_card6.png"
+                    );
+            }
         }
+        if (card6) {
+            var card6Image = loadCardTierImage(context, tier, "card6")
+            if (card6Image != null) {
+                currentImage = card6Image
+                layerLightSaber = getBitmap(context, "characters/davith/images/lightsaber_card6.png");
+            }
+        }
+
         //card9 tier images
-        else if (xpCardsEquipped[8]) {
-            if(ancientLightSaber) {
+        if (card9Ancient) {
                 var card9Image = loadCardTierImage(context, tier, "card9_ancient_light_saber")
                 if (card9Image != null) {
                     currentImage = card9Image
+                    layerLightSaber = getBitmap(context,
+                        "characters/davith/images/lightsaber_ancient.png");
                 }
             }
-            else {
-                var card9Image = loadCardTierImage(context, tier, "card9")
-                if (card9Image != null) {
-                    currentImage = card9Image
-                }
+        if(card9) {
+            var card9Image = loadCardTierImage(context, tier, "card9")
+            if (card9Image != null) {
+                currentImage = card9Image
             }
         }
-        else if(ancientLightSaber){
+
+        if(ancient){
             var ancientLightSaberImage = loadCardTierImage(context, tier, "ancient_light_saber")
             if (ancientLightSaberImage != null) {
                 currentImage = ancientLightSaberImage
+                layerLightSaber = getBitmap(context,
+                    "characters/davith/images/lightsaber_ancient.png");
             }
         }
 

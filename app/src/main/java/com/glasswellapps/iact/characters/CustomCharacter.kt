@@ -13,6 +13,7 @@ class CustomCharacter : Character {
     constructor(context: Context){
         name = ""
         name_short = ""
+        index = 21
         type = "Hero"
         defence_dice = ""
 

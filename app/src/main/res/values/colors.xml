@@ -5,10 +5,13 @@
     <color name="dice_red">#FF5757</color>
     <color name="dice_blue">#155BD1</color>
     <color name="stat_orange">#FFC757</color>
-    <color name="credits">#70CCEF</color>
+    <color name="rebel_font">#22FFED</color>
+    <color name="imperial_font">#FFFFFF</color>
+    <color name="credits">#1EBCFA</color>
     <color name="grey">#3A3A3A</color>
     <color name="black">#FF000000</color>
     <color name="white">#FBF9F9</color>
     <color name="shadow">#B7000000</color>
     <color name="text_blue">#08214A</color>
+    <color name="transparent">#74FFFFFF</color>
 </resources>

@@ -24,17 +24,29 @@
             android:layout_gravity="center">
 
             <ImageView
+                android:id="@+id/imageView45"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:rotation="180"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/character_select_background" />
+
+            <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:background="@drawable/screen_background"
+                android:background="@drawable/border_portrait"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
-                android:id="@+id/linearLayout10"
+                android:id="@+id/devices_list"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="15dp"
@@ -118,7 +130,7 @@
             <ImageView
                 android:id="@+id/imageView23"
                 android:layout_width="0dp"
-                android:layout_height="20dp"
+                android:layout_height="15dp"
                 android:background="@drawable/border_side"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -127,7 +139,7 @@
             <ImageView
                 android:id="@+id/imageView25"
                 android:layout_width="0dp"
-                android:layout_height="20dp"
+                android:layout_height="15dp"
                 android:background="@drawable/border_side"
                 android:rotation="180"
                 app:layout_constraintEnd_toEndOf="parent"

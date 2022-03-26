@@ -9,6 +9,7 @@ class Character_loku : Character {
         //default values
         name = "Loku Kanoloa"
         name_short = "loku"
+        index = 11
         type = "Hero"
         defence_dice = "white"
         strength = "B  "

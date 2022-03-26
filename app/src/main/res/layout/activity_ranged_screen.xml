@@ -8,6 +8,7 @@
     tools:context=".inventory.AccScreen">
 
     <ScrollView
+        android:id="@+id/scrollView5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,27 +23,60 @@
             android:orientation="vertical"
             android:paddingBottom="100dp">
 
-            <TextView
-                android:id="@+id/textView45"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:fontFamily="@font/agency_fb"
-                android:gravity="center"
-                android:paddingTop="15dp"
-                android:paddingBottom="10dp"
-                android:shadowColor="@color/black"
-                android:shadowRadius="10"
-                android:text="TIER 1"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/separator27"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:srcCompat="@drawable/separator" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/agency_fb"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="10dp"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="10"
+                    android:text="TIER 1"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/separator28"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:srcCompat="@drawable/separator" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -54,7 +88,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -67,6 +102,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -75,7 +111,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -88,6 +125,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -96,7 +134,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -109,6 +148,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -123,7 +163,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -136,6 +177,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -144,7 +186,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -157,6 +200,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -165,7 +209,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -178,6 +223,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -192,7 +238,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -205,6 +252,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -213,7 +261,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -226,6 +275,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -234,7 +284,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -247,28 +298,62 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView46"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:clickable="false"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:fontFamily="@font/agency_fb"
-                android:gravity="center"
-                android:text="Mods"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/separator29"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:srcCompat="@drawable/separator" />
+
+                <TextView
+                    android:id="@+id/textView46"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/agency_fb"
+                    android:gravity="center"
+                    android:text="Mods"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/separator30"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:srcCompat="@drawable/separator" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -280,7 +365,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -293,6 +379,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -301,7 +388,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -314,6 +402,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -322,7 +411,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -335,6 +425,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -349,7 +440,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -362,6 +454,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -370,7 +463,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -383,6 +477,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -391,7 +486,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -404,31 +500,65 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView51"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:fontFamily="@font/agency_fb"
-                android:gravity="center"
-                android:paddingTop="20dp"
-                android:paddingBottom="10dp"
-                android:shadowColor="@color/black"
-                android:shadowRadius="10"
-                android:text="TIER 2"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/separator31"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:srcCompat="@drawable/separator" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/agency_fb"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="10"
+                    android:text="TIER 2"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/separator32"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:srcCompat="@drawable/separator" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -440,7 +570,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -453,6 +584,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -461,7 +593,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -474,6 +607,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -482,7 +616,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -495,6 +630,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -509,7 +645,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -522,6 +659,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -530,7 +668,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -543,6 +682,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -551,7 +691,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -564,6 +705,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -578,7 +720,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -591,6 +734,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -599,7 +743,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -612,6 +757,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -620,7 +766,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -633,28 +780,62 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView48"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:clickable="false"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:fontFamily="@font/agency_fb"
-                android:gravity="center"
-                android:text="Mods"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/separator33"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:srcCompat="@drawable/separator" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/agency_fb"
+                    android:gravity="center"
+                    android:text="Mods"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/separator34"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:srcCompat="@drawable/separator" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -666,7 +847,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -679,6 +861,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -687,7 +870,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -700,6 +884,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -708,7 +893,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -721,6 +907,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -735,7 +922,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -748,6 +936,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -756,7 +945,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -769,6 +959,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -777,7 +968,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -790,31 +982,65 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView52"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clickable="false"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:fontFamily="@font/agency_fb"
-                android:gravity="center"
-                android:paddingTop="20dp"
-                android:paddingBottom="10dp"
-                android:shadowColor="@color/black"
-                android:shadowRadius="10"
-                android:text="TIER 3"
-                android:textAllCaps="true"
-                android:textColor="@color/white"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/separator35"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:srcCompat="@drawable/separator" />
+
+                <TextView
+                    android:id="@+id/textView52"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/agency_fb"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="10"
+                    android:text="TIER 3"
+                    android:textAllCaps="true"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/separator36"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:srcCompat="@drawable/separator" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -826,7 +1052,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -839,6 +1066,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -847,7 +1075,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -860,6 +1089,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -868,7 +1098,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -881,6 +1112,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -895,7 +1127,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -908,6 +1141,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -916,7 +1150,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -929,6 +1164,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -937,7 +1173,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -950,6 +1187,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -964,7 +1202,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -977,6 +1216,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -985,7 +1225,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -998,6 +1239,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -1006,7 +1248,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -1019,28 +1262,62 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
 
-            <TextView
-                android:id="@+id/textView50"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:clickable="false"
-                android:focusable="false"
-                android:focusableInTouchMode="false"
-                android:fontFamily="@font/agency_fb"
-                android:gravity="center"
-                android:text="Mods"
-                android:textColor="#FFFFFF"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/separator37"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:srcCompat="@drawable/separator" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:fontFamily="@font/agency_fb"
+                    android:gravity="center"
+                    android:text="Mods"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/separator38"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+                    app:srcCompat="@drawable/separator" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -1052,7 +1329,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -1065,6 +1343,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -1073,7 +1352,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -1086,6 +1366,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
 
@@ -1094,7 +1375,8 @@
                     android:layout_height="match_parent"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
+                    android:background="@drawable/vignette"
+                    app:cardBackgroundColor="#00FFFFFF"
                     app:cardCornerRadius="8dp"
                     app:cardElevation="3dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -1107,6 +1389,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitCenter" />
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
@@ -1114,72 +1397,63 @@
         </LinearLayout>
     </ScrollView>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardView6"
+    <LinearLayout
+        android:id="@+id/linearLayout15"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:cardElevation="20dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView36"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/tabs"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <LinearLayout
-            android:id="@+id/linearLayout15"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/tabs"
-            android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/to_acc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_screen_tabs"
+            android:onClick="onToAcc"
+            android:padding="5dp"
+            app:srcCompat="@drawable/item_accessory" />
 
-            <ImageView
-                android:id="@+id/to_acc"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/item_screen_tabs"
-                android:onClick="onToAcc"
-                android:padding="5dp"
-                app:srcCompat="@drawable/item_accessory" />
+        <ImageView
+            android:id="@+id/to_armor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_screen_tabs"
+            android:onClick="onToArmor"
+            android:padding="5dp"
+            app:srcCompat="@drawable/item_armour" />
 
-            <ImageView
-                android:id="@+id/to_armor"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/item_screen_tabs"
-                android:onClick="onToArmor"
-                android:padding="5dp"
-                app:srcCompat="@drawable/item_armour" />
+        <ImageView
+            android:id="@+id/to_melee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_screen_tabs"
+            android:onClick="onToMelee"
+            android:padding="5dp"
+            app:srcCompat="@drawable/item_melee" />
 
-            <ImageView
-                android:id="@+id/to_melee"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/item_screen_tabs"
-                android:onClick="onToMelee"
-                android:padding="5dp"
-                app:srcCompat="@drawable/item_melee" />
-
-            <ImageView
-                android:id="@+id/to_ranged"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/item_screen_tabs"
-                android:onClick="onToRanged"
-                android:padding="5dp"
-                app:srcCompat="@drawable/item_ranged" />
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+        <ImageView
+            android:id="@+id/to_ranged"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/item_screen_tabs"
+            android:onClick="onToRanged"
+            android:padding="5dp"
+            app:srcCompat="@drawable/item_ranged" />
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView36"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/screen_background"
+        android:background="@drawable/border_portrait"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

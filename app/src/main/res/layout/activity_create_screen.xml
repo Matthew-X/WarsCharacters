@@ -7,38 +7,440 @@
     android:background="@drawable/character_select_background"
     tools:context=".CreateScreen">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/customXP"
-        android:layout_width="180dp"
-        android:layout_height="44dp"
+    <LinearLayout
+        android:id="@+id/linearLayout11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        app:cardCornerRadius="2dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout9">
+        app:layout_constraintTop_toBottomOf="@+id/cardView7">
 
-        <ImageView
-            android:id="@+id/imageView20"
+        <LinearLayout
+            android:id="@+id/linearLayout8"
             android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_gravity="center"
-            android:background="@drawable/save_file_back"
-            android:foreground="?attr/selectableItemBackgroundBorderless" />
-
-        <TextView
-            android:id="@+id/textView23"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_weight="2"
-            android:fontFamily="@font/agency_fb"
-            android:gravity="center"
-            android:shadowColor="@color/black"
-            android:shadowRadius="10"
-            android:text="XP CARDS"
-            android:textColor="@color/white"
-            android:textSize="24sp" />
-    </androidx.cardview.widget.CardView>
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/agency_fb"
+                    android:text="Health"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/customHealth"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_box"
+                    android:ems="10"
+                    android:fontFamily="@font/agency_fb"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="5"
+                    android:text="10"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/agency_fb"
+                    android:text="Endurance"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/customEndurance"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_box"
+                    android:ems="10"
+                    android:fontFamily="@font/agency_fb"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="5"
+                    android:text="4"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/agency_fb"
+                    android:text="Speed"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/customSpeed"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_box"
+                    android:ems="10"
+                    android:fontFamily="@font/agency_fb"
+                    android:gravity="center"
+                    android:inputType="textPersonName"
+                    android:shadowColor="@color/black"
+                    android:shadowRadius="5"
+                    android:text="4"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/agency_fb"
+                    android:text="Defence"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <FrameLayout
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/stat_box">
+
+                    <ImageView
+                        android:id="@+id/customDefence"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/dice_black" />
+                </FrameLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/editStrength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/agency_fb"
+                    android:text="Strength"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/customStrength1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box"
+                        app:srcCompat="@drawable/dice_green" />
+
+                    <ImageView
+                        android:id="@+id/customStrength2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box"
+                        app:srcCompat="@drawable/dice_yellow" />
+
+                    <ImageView
+                        android:id="@+id/customStrength3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box"
+                        app:srcCompat="@drawable/dice_blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/customStrengthWounded1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box"
+                        app:srcCompat="@drawable/dice_green" />
+
+                    <ImageView
+                        android:id="@+id/customStrengthWounded2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box"
+                        app:srcCompat="@drawable/dice_red" />
+
+                    <ImageView
+                        android:id="@+id/customStrengthWounded3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/editInsight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/agency_fb"
+                    android:text="Insight"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/customInsight1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box"
+                        app:srcCompat="@drawable/dice_green" />
+
+                    <ImageView
+                        android:id="@+id/customInsight2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box"
+                        app:srcCompat="@drawable/dice_yellow" />
+
+                    <ImageView
+                        android:id="@+id/customInsight3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box"
+                        app:srcCompat="@drawable/dice_blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/customInsightWounded1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box"
+                        app:srcCompat="@drawable/dice_green" />
+
+                    <ImageView
+                        android:id="@+id/customInsightWounded2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box"
+                        app:srcCompat="@drawable/dice_red" />
+
+                    <ImageView
+                        android:id="@+id/customInsightWounded3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/editTech"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/agency_fb"
+                    android:text="Tech"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/customTech1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box"
+                        app:srcCompat="@drawable/dice_green" />
+
+                    <ImageView
+                        android:id="@+id/customTech2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box"
+                        app:srcCompat="@drawable/dice_yellow" />
+
+                    <ImageView
+                        android:id="@+id/customTech3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box"
+                        app:srcCompat="@drawable/dice_blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/customTechWounded1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box"
+                        app:srcCompat="@drawable/dice_green" />
+
+                    <ImageView
+                        android:id="@+id/customTechWounded2"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box"
+                        app:srcCompat="@drawable/dice_red" />
+
+                    <ImageView
+                        android:id="@+id/customTechWounded3"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dice_box" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
     <EditText
         android:id="@+id/customName"
@@ -273,449 +675,48 @@
 
     </androidx.cardview.widget.CardView>
 
-    <LinearLayout
-        android:id="@+id/linearLayout8"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView7">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="5dp">
-
-            <TextView
-                android:id="@+id/textView37"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/agency_fb"
-                android:text="Health"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-
-            <EditText
-                android:id="@+id/customHealth"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@drawable/stat_box"
-                android:ems="10"
-                android:fontFamily="@font/agency_fb"
-                android:gravity="center"
-                android:inputType="textPersonName"
-                android:shadowColor="@color/black"
-                android:shadowRadius="5"
-                android:text="10"
-                android:textSize="24sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="5dp">
-
-            <TextView
-                android:id="@+id/textView38"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/agency_fb"
-                android:text="Endurance"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-
-            <EditText
-                android:id="@+id/customEndurance"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@drawable/stat_box"
-                android:ems="10"
-                android:fontFamily="@font/agency_fb"
-                android:gravity="center"
-                android:inputType="textPersonName"
-                android:shadowColor="@color/black"
-                android:shadowRadius="5"
-                android:text="4"
-                android:textSize="24sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="5dp">
-
-            <TextView
-                android:id="@+id/textView39"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/agency_fb"
-                android:text="Speed"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-
-            <EditText
-                android:id="@+id/customSpeed"
-                android:layout_width="44dp"
-                android:layout_height="44dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@drawable/stat_box"
-                android:ems="10"
-                android:fontFamily="@font/agency_fb"
-                android:gravity="center"
-                android:inputType="textPersonName"
-                android:shadowColor="@color/black"
-                android:shadowRadius="5"
-                android:text="4"
-                android:textSize="24sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="0dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="0dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="5dp">
-
-            <TextView
-                android:id="@+id/textView40"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/agency_fb"
-                android:text="Defence"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-
-            <FrameLayout
-                android:layout_width="44dp"
-                android:layout_height="44dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:background="@drawable/stat_box">
-
-                <ImageView
-                    android:id="@+id/customDefence"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_gravity="center"
-                    app:srcCompat="@drawable/dice_black" />
-            </FrameLayout>
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout9"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout8">
-
-        <LinearLayout
-            android:id="@+id/editStrength"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="5dp">
-
-            <TextView
-                android:id="@+id/textView49"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/agency_fb"
-                android:text="Strength"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:padding="5dp">
-
-                <ImageView
-                    android:id="@+id/customStrength1"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box"
-                    app:srcCompat="@drawable/dice_green" />
-
-                <ImageView
-                    android:id="@+id/customStrength2"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box"
-                    app:srcCompat="@drawable/dice_yellow" />
-
-                <ImageView
-                    android:id="@+id/customStrength3"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box"
-                    app:srcCompat="@drawable/dice_blue" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:padding="5dp">
-
-                <ImageView
-                    android:id="@+id/customStrengthWounded1"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box"
-                    app:srcCompat="@drawable/dice_green" />
-
-                <ImageView
-                    android:id="@+id/customStrengthWounded2"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box"
-                    app:srcCompat="@drawable/dice_red" />
-
-                <ImageView
-                    android:id="@+id/customStrengthWounded3"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/editInsight"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="5dp">
-
-            <TextView
-                android:id="@+id/textView57"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/agency_fb"
-                android:text="Insight"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:padding="5dp">
-
-                <ImageView
-                    android:id="@+id/customInsight1"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box"
-                    app:srcCompat="@drawable/dice_green" />
-
-                <ImageView
-                    android:id="@+id/customInsight2"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box"
-                    app:srcCompat="@drawable/dice_yellow" />
-
-                <ImageView
-                    android:id="@+id/customInsight3"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box"
-                    app:srcCompat="@drawable/dice_blue" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:padding="5dp">
-
-                <ImageView
-                    android:id="@+id/customInsightWounded1"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box"
-                    app:srcCompat="@drawable/dice_green" />
-
-                <ImageView
-                    android:id="@+id/customInsightWounded2"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box"
-                    app:srcCompat="@drawable/dice_red" />
-
-                <ImageView
-                    android:id="@+id/customInsightWounded3"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/editTech"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:padding="5dp">
-
-            <TextView
-                android:id="@+id/textView58"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/agency_fb"
-                android:text="Tech"
-                android:textColor="@color/white"
-                android:textSize="18sp" />
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:padding="5dp">
-
-                <ImageView
-                    android:id="@+id/customTech1"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box"
-                    app:srcCompat="@drawable/dice_green" />
-
-                <ImageView
-                    android:id="@+id/customTech2"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box"
-                    app:srcCompat="@drawable/dice_yellow" />
-
-                <ImageView
-                    android:id="@+id/customTech3"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box"
-                    app:srcCompat="@drawable/dice_blue" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:padding="5dp">
-
-                <ImageView
-                    android:id="@+id/customTechWounded1"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box"
-                    app:srcCompat="@drawable/dice_green" />
-
-                <ImageView
-                    android:id="@+id/customTechWounded2"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box"
-                    app:srcCompat="@drawable/dice_red" />
-
-                <ImageView
-                    android:id="@+id/customTechWounded3"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/dice_box" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
     <FrameLayout
         android:id="@+id/frameLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/screen_background"
+        android:background="@drawable/border_portrait"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
     </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/customXP"
+        android:layout_width="180dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/frameLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:background="@drawable/save_file_back"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:fontFamily="@font/agency_fb"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowRadius="10"
+            android:text="XP CARDS"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </androidx.cardview.widget.CardView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

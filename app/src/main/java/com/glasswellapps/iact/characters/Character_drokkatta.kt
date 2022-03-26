@@ -9,6 +9,7 @@ class Character_drokkatta : Character {
         //default values
         name = "Drokkatta"
         name_short = "drokkatta"
+        index = 4
         type = "Hero"
         defence_dice = "black"
 

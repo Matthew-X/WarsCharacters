@@ -10,7 +10,7 @@
         android:id="@+id/frameLayout5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/screen_background"
+        android:background="@drawable/border_portrait"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,25 +38,67 @@
                     android:textSize="36sp"
                     android:textStyle="bold" />
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:fontFamily="@font/agency_fb"
-                    android:gravity="center"
-                    android:text="Main title/character portraits:"
-                    android:textColor="#FFFFFF"
-                    android:textSize="24sp" />
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/textView27"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/agency_fb"
-                    android:gravity="center"
-                    android:text="Fantasy fight games"
-                    android:textColor="#FFEB3B"
-                    android:textSize="18sp" />
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/agency_fb"
+                        android:gravity="center"
+                        android:shadowColor="#00BCD4"
+                        android:shadowRadius="5"
+                        android:text="This is a free fan project  "
+                        android:textColor="@color/credits"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/agency_fb"
+                        android:gravity="center"
+                        android:shadowColor="#00BCD4"
+                        android:shadowRadius="5"
+                        android:text="Star Wars is owned by Disney and created by Lucasfilm"
+                        android:textColor="@color/credits"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView59"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/agency_fb"
+                        android:gravity="center"
+                        android:shadowColor="#00BCD4"
+                        android:shadowRadius="5"
+                        android:text="Imperial Assault is created by  Fantasy Flight Games"
+                        android:textColor="@color/credits"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/textView60"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="3"
+                        android:fontFamily="@font/agency_fb"
+                        android:gravity="center"
+                        android:shadowColor="#00BCD4"
+                        android:shadowRadius="5"
+                        android:text="Sounds used are from Jedi Knight Academy by Raven Software. Knights of the Old Republic by BioWare and Lego Star Wars: The Complete Saga by Travellers Tales "
+                        android:textColor="@color/credits"
+                        android:textSize="18sp" />
+                </LinearLayout>
 
                 <TextView
                     android:id="@+id/textView31"
@@ -232,17 +274,7 @@
                             android:layout_marginTop="5dp"
                             android:layout_marginBottom="5dp"
                             android:layout_weight="1"
-                            app:cardCornerRadius="50dp">
-
-                            <ImageView
-                                android:id="@+id/mannyImageLink"
-                                android:layout_width="100dp"
-                                android:layout_height="100dp"
-                                android:adjustViewBounds="true"
-                                android:background="@drawable/manny"
-                                android:scaleType="center" />
-
-                        </androidx.cardview.widget.CardView>
+                            app:cardCornerRadius="50dp"/>
 
                         <TextView
                             android:id="@+id/mannyPortfolio"
@@ -285,18 +317,10 @@
                             android:layout_marginTop="5dp"
                             android:layout_marginBottom="5dp"
                             android:layout_weight="1"
-                            app:cardCornerRadius="50dp">
-
-                            <ImageView
-                                android:id="@+id/HeroXImageLink"
-                                android:layout_width="100dp"
-                                android:layout_height="100dp"
-                                android:adjustViewBounds="true"
-                                android:background="@drawable/matthewpfp" />
-                        </androidx.cardview.widget.CardView>
+                            app:cardCornerRadius="50dp"/>
 
                         <TextView
-                            android:id="@+id/textView44"
+                            android:id="@+id/matthew_twitter"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_landscape">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="@color/shadow"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="3dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView31"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4">
+
+        <ImageView
+            android:id="@+id/XPCard9"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:alpha="0.5"
+            android:foreground="@drawable/empty_item_slot_border"
+            android:scaleType="fitXY"
+            android:tag="8"
+            app:srcCompat="@drawable/empty_item_slot" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout10"
+        app:layout_constraintEnd_toEndOf="@+id/imageView31"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView24">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/shadow"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp">
+
+                <ImageView
+                    android:id="@+id/XPCard3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:alpha="0.5"
+                    android:foreground="@drawable/empty_item_slot_border"
+                    android:scaleType="fitXY"
+                    android:tag="2"
+                    app:srcCompat="@drawable/empty_item_slot" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/shadow"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp">
+
+                <ImageView
+                    android:id="@+id/XPCard1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:alpha="0.5"
+                    android:foreground="@drawable/empty_item_slot_border"
+                    android:scaleType="fitXY"
+                    android:tag="0"
+                    app:srcCompat="@drawable/empty_item_slot" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/shadow"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp">
+
+                <ImageView
+                    android:id="@+id/XPCard4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:alpha="0.5"
+                    android:foreground="@drawable/empty_item_slot_border"
+                    android:scaleType="fitXY"
+                    android:tag="3"
+                    app:srcCompat="@drawable/empty_item_slot" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/shadow"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp">
+
+                <ImageView
+                    android:id="@+id/XPCard2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:alpha="0.5"
+                    android:foreground="@drawable/empty_item_slot_border"
+                    android:scaleType="fitXY"
+                    android:tag="1"
+                    app:srcCompat="@drawable/empty_item_slot" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/shadow"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp">
+
+                <ImageView
+                    android:id="@+id/XPCard5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:alpha="0.5"
+                    android:foreground="@drawable/empty_item_slot_border"
+                    android:scaleType="fitXY"
+                    android:tag="4"
+                    app:srcCompat="@drawable/empty_item_slot" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/shadow"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp">
+
+                <ImageView
+                    android:id="@+id/XPCard6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:alpha="0.5"
+                    android:foreground="@drawable/empty_item_slot_border"
+                    android:scaleType="fitXY"
+                    android:tag="5"
+                    app:srcCompat="@drawable/empty_item_slot" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/shadow"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp">
+
+                <ImageView
+                    android:id="@+id/XPCard7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:alpha="0.5"
+                    android:foreground="@drawable/empty_item_slot_border"
+                    android:scaleType="fitXY"
+                    android:tag="6"
+                    app:srcCompat="@drawable/empty_item_slot" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                app:cardBackgroundColor="@color/shadow"
+                app:cardCornerRadius="7dp"
+                app:cardElevation="3dp">
+
+                <ImageView
+                    android:id="@+id/XPCard8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:alpha="0.5"
+                    android:foreground="@drawable/empty_item_slot_border"
+                    android:scaleType="fitXY"
+                    android:tag="7"
+                    app:srcCompat="@drawable/empty_item_slot" />
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/agency_fb"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:text="XP SELECT"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/addXP"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/plus_button" />
+
+        <TextView
+            android:id="@+id/xp_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="10"
+            android:fontFamily="@font/agency_fb"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/minusXP"
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/minus_button" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_landscape"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

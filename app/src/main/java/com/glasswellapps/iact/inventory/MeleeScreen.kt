@@ -14,13 +14,13 @@ import android.widget.ImageView
 import android.widget.Toast
 import com.glasswellapps.iact.*
 import com.glasswellapps.iact.effects.Sounds
-import com.glasswellapps.iact.MainActivity
+import com.glasswellapps.iact.loading.CharacterHolder
 import kotlinx.android.synthetic.main.activity_melee_screen.*
 import kotlinx.android.synthetic.main.dialog_show_card.*
-import kotlinx.android.synthetic.main.toast_no_actions_left.view.*
+import kotlinx.android.synthetic.main.toast.view.*
 
 class MeleeScreen : AppCompatActivity() {
-    val character = Loaded.getCharacter()
+    val character = CharacterHolder.getActiveCharacter()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_melee_screen)
@@ -137,6 +137,10 @@ class MeleeScreen : AppCompatActivity() {
     }
 
     fun equipWeapon(item: Item): Float {
+        if(!CharacterHolder.getIsInteractable()){
+            Sounds.negativeSound()
+            return 0.5f;
+        }
         //remove if already equipped
         if (character.weapons.remove(item.index)) {
             Sounds.selectSound()
@@ -152,6 +156,10 @@ class MeleeScreen : AppCompatActivity() {
     }
 
     fun equipMod(item: Item): Float {
+        if(!CharacterHolder.getIsInteractable()){
+            Sounds.negativeSound()
+            return 0.5f;
+        }
         //remove if already equipped
         if (character.mods.remove(item.index)) {
             Sounds.selectSound()
@@ -167,7 +175,7 @@ class MeleeScreen : AppCompatActivity() {
         val toast = Toast(this)
         toast!!.duration = Toast.LENGTH_SHORT
         val view = this.layoutInflater.inflate(
-            R.layout.toast_no_actions_left,
+            R.layout.toast,
             null,
             false
         )

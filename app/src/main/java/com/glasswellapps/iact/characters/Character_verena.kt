@@ -15,6 +15,7 @@ class Character_verena : Character {
         //default values
         name = "Verena Talos"
         name_short = "verena"
+        index = 19
         type = "Hero"
         defence_dice = "black"
 

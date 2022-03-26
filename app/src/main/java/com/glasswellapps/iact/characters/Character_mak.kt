@@ -9,6 +9,7 @@ class Character_mak : Character {
         //default values
         name = "Mak Eshka'rey"
         name_short = "mak"
+        index = 12
         type = "Hero"
         defence_dice = "white"
 

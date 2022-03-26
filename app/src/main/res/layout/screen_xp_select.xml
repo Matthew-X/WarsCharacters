@@ -68,7 +68,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:alpha="0.5"
-                        android:onClick="onXPCard"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitXY"
                         android:tag="0"
                         app:srcCompat="@drawable/empty_item_slot" />
@@ -89,7 +89,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:alpha="0.5"
-                        android:onClick="onXPCard"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitXY"
                         android:tag="1"
                         app:srcCompat="@drawable/empty_item_slot" />
@@ -110,7 +110,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:alpha="0.5"
-                        android:onClick="onXPCard"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitXY"
                         android:tag="2"
                         app:srcCompat="@drawable/empty_item_slot" />
@@ -139,7 +139,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:alpha="0.5"
-                        android:onClick="onXPCard"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitXY"
                         android:tag="3"
                         app:srcCompat="@drawable/empty_item_slot" />
@@ -160,7 +160,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:alpha="0.5"
-                        android:onClick="onXPCard"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitXY"
                         android:tag="4"
                         app:srcCompat="@drawable/empty_item_slot" />
@@ -181,7 +181,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:alpha="0.5"
-                        android:onClick="onXPCard"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitXY"
                         android:tag="5"
                         app:srcCompat="@drawable/empty_item_slot" />
@@ -210,7 +210,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:alpha="0.5"
-                        android:onClick="onXPCard"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitXY"
                         android:tag="6"
                         app:srcCompat="@drawable/empty_item_slot" />
@@ -231,7 +231,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:alpha="0.5"
-                        android:onClick="onXPCard"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitXY"
                         android:tag="7"
                         app:srcCompat="@drawable/empty_item_slot" />
@@ -252,7 +252,7 @@
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:alpha="0.5"
-                        android:onClick="onXPCard"
+                        android:foreground="@drawable/empty_item_slot_border"
                         android:scaleType="fitXY"
                         android:tag="8"
                         app:srcCompat="@drawable/empty_item_slot" />
@@ -267,8 +267,8 @@
         android:id="@+id/linearLayout5"
         android:layout_width="0dp"
         android:layout_height="80dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
         android:layout_weight="1"
         android:gravity="bottom"
         android:orientation="horizontal"
@@ -281,9 +281,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
-            app:cardBackgroundColor="@color/cardview_dark_background"
+            app:cardBackgroundColor="#00424242"
             app:cardCornerRadius="30sp"
-            app:cardElevation="3dp">
+            app:cardElevation="0sp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -292,13 +292,12 @@
 
                 <ImageButton
                     android:id="@+id/addXP"
-                    android:layout_width="wrap_content"
+                    android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:background="#00FFFFFF"
-                    android:onClick="addXP"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/plus_button" />
 
@@ -317,13 +316,12 @@
 
                 <ImageButton
                     android:id="@+id/minusXP"
-                    android:layout_width="wrap_content"
+                    android:layout_width="40dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:background="#00FFFFFF"
-                    android:onClick="minusXP"
                     android:scaleType="fitCenter"
                     app:srcCompat="@drawable/minus_button" />
 
@@ -358,7 +356,7 @@
         android:id="@+id/imageView31"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/screen_background"
+        android:background="@drawable/border_portrait"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

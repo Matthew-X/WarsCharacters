@@ -9,6 +9,7 @@ class Character_onar : Character {
         //default values
         name = "Onar Koma"
         name_short = "onar"
+        index = 15
         type = "Hero"
         defence_dice = ""
 

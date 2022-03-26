@@ -11,7 +11,7 @@
         android:id="@+id/imageView30"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/screen_background"
+        android:background="@drawable/border_portrait"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -101,9 +101,10 @@
                         android:layout_margin="10dp"
                         android:layout_weight="1"
                         android:padding="2dp"
-                        app:cardBackgroundColor="@color/grey"
+                        app:cardBackgroundColor="#00FFFFFF"
                         app:cardCornerRadius="10dp"
-                        app:cardElevation="2dp">
+                        app:cardElevation="0dp"
+                        app:cardMaxElevation="0dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -151,9 +152,10 @@
                         android:layout_margin="10dp"
                         android:layout_weight="1"
                         android:padding="2dp"
-                        app:cardBackgroundColor="@color/grey"
+                        app:cardBackgroundColor="#00FFFFFF"
                         app:cardCornerRadius="10dp"
-                        app:cardElevation="2dp">
+                        app:cardElevation="0dp"
+                        app:cardMaxElevation="0dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="match_parent"
@@ -1459,13 +1461,20 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="70dp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             android:layout_weight="1"
             app:cardBackgroundColor="@color/cardview_dark_background"
             app:cardCornerRadius="35sp"
             app:cardElevation="3dp">
+
+            <ImageView
+                android:id="@+id/imageView52"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/character_select_background" />
 
             <LinearLayout
                 android:layout_width="300dp"
@@ -1511,5 +1520,16 @@
 
         </androidx.cardview.widget.CardView>
     </FrameLayout>
+
+    <ImageView
+        android:id="@+id/separator2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:srcCompat="@drawable/separator" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

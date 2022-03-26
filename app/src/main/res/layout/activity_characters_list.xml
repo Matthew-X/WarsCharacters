@@ -106,7 +106,7 @@
                 android:adjustViewBounds="true"
                 android:onClick="onSelect"
                 android:scaleType="fitCenter"
-                android:tag="drokdatta" />
+                android:tag="drokkatta" />
 
             <ImageView
                 android:id="@+id/imageViewShyla"
@@ -265,7 +265,7 @@
         android:id="@+id/frameLayout5"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/screen_background"
+        android:background="@drawable/border_portrait"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

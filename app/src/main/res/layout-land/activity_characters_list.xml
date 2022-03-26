@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_landscape"
+    tools:context=".Characters_list">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/characterList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:alpha="0"
+            android:gravity="center|center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewBiv"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="biv" />
+
+            <ImageView
+                android:id="@+id/imageViewDiala"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="diala" />
+
+            <ImageView
+                android:id="@+id/imageViewSaska"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="saska" />
+
+            <ImageView
+                android:id="@+id/imageViewGideon"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="gideon" />
+
+            <ImageView
+                android:id="@+id/imageViewJarrod"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="jarrod" />
+
+            <ImageView
+                android:id="@+id/imageViewVinto"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="vinto" />
+
+            <ImageView
+                android:id="@+id/imageViewMak"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="mak" />
+
+            <ImageView
+                android:id="@+id/imageViewLoku"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="loku" />
+
+            <ImageView
+                android:id="@+id/imageViewDrok"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="drokkatta" />
+
+            <ImageView
+                android:id="@+id/imageViewShyla"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="shyla" />
+
+            <ImageView
+                android:id="@+id/imageViewJyn"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="jyn" />
+
+            <ImageView
+                android:id="@+id/imageViewVerena"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="verena" />
+
+            <ImageView
+                android:id="@+id/imageViewOnar"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="onar" />
+
+            <ImageView
+                android:id="@+id/imageViewDavith"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="davith" />
+
+            <ImageView
+                android:id="@+id/imageViewMHD"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="mhd19" />
+
+            <ImageView
+                android:id="@+id/imageViewGaar"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="gaarkhan" />
+
+            <ImageView
+                android:id="@+id/imageViewFenn"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="fenn" />
+
+            <ImageView
+                android:id="@+id/imageViewCT"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="ct1701" />
+
+            <ImageView
+                android:id="@+id/imageViewKo"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="kotun" />
+
+            <ImageView
+                android:id="@+id/imageViewMurne"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="murne" />
+
+            <ImageView
+                android:id="@+id/imageViewTress"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:onClick="onSelect"
+                android:scaleType="fitCenter"
+                android:tag="tress" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/customCharacter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:onClick="onSelectCustom"
+                android:visibility="gone">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView5"
+                    android:layout_width="70dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="12dp"
+                    android:visibility="visible"
+                    app:cardCornerRadius="35dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="21dp"
+                    android:background="@drawable/save_file_back_2"
+                    android:fontFamily="@font/agency_fb"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:shadowColor="@color/text_blue"
+                    android:shadowRadius="3"
+                    android:text="Custom Character"
+                    android:textColor="@color/white"
+                    android:textSize="34sp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView5"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_landscape"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

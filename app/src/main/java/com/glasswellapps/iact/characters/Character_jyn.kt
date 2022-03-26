@@ -10,6 +10,7 @@ class Character_jyn : Character {
         //default values
         name = "Jyn Odan"
         name_short = "jyn"
+        index = 9
         type = "Hero"
         defence_dice = "white"
 

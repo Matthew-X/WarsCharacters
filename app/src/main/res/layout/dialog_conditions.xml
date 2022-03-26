@@ -26,14 +26,16 @@
             android:layout_gravity="center">
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/imageView48"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:background="@drawable/character_select_background"
+                android:rotation="180"
+                android:scaleType="centerCrop"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/character_select_background" />
 
             <LinearLayout
                 android:id="@+id/linearLayout2"
@@ -53,7 +55,6 @@
                     android:background="@drawable/condition_hidden"
                     android:fontFamily="@font/agency_fb"
                     android:gravity="center"
-                    android:onClick="onHidden"
                     android:shadowColor="@color/white"
                     android:shadowRadius="8"
                     android:tag="0"
@@ -69,7 +70,6 @@
                     android:background="@drawable/condition_focused"
                     android:fontFamily="@font/agency_fb"
                     android:gravity="center"
-                    android:onClick="onFocused"
                     android:shadowColor="@color/white"
                     android:shadowRadius="8"
                     android:tag="1"
@@ -101,7 +101,6 @@
                     android:background="@drawable/condition_weakened"
                     android:fontFamily="@font/agency_fb"
                     android:gravity="center"
-                    android:onClick="onWeakened"
                     android:shadowColor="@color/white"
                     android:shadowRadius="8"
                     android:tag="2"
@@ -117,7 +116,6 @@
                     android:background="@drawable/condition_bleeding"
                     android:fontFamily="@font/agency_fb"
                     android:gravity="center"
-                    android:onClick="onBleeding"
                     android:shadowColor="@color/white"
                     android:shadowRadius="8"
                     android:tag="3"
@@ -133,7 +131,6 @@
                     android:background="@drawable/condition_stunned"
                     android:fontFamily="@font/agency_fb"
                     android:gravity="center"
-                    android:onClick="onStunned"
                     android:shadowColor="@color/white"
                     android:shadowRadius="8"
                     android:tag="4"
@@ -162,7 +159,7 @@
                 android:id="@+id/imageView24"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:background="@drawable/screen_background"
+                android:background="@drawable/border_portrait"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

@@ -44,6 +44,8 @@
                     android:fontFamily="sans-serif-medium"
                     android:gravity="fill_horizontal"
                     android:lineSpacingExtra="8sp"
+                    android:shadowColor="@color/credits"
+                    android:shadowRadius="5"
                     android:text="TextView"
                     android:textColor="@color/credits"
                     android:textSize="18sp"
@@ -58,6 +60,8 @@
                     android:fontFamily="sans-serif-medium"
                     android:gravity="fill_horizontal"
                     android:lineSpacingExtra="8sp"
+                    android:shadowColor="@color/credits"
+                    android:shadowRadius="5"
                     android:text="TextView"
                     android:textColor="@color/credits"
                     android:textSize="14sp"
@@ -71,6 +75,8 @@
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center|fill_horizontal"
                     android:lineSpacingExtra="8sp"
+                    android:shadowColor="@color/credits"
+                    android:shadowRadius="10"
                     android:text="TextView"
                     android:textColor="@color/credits"
                     android:textSize="14sp" />
@@ -82,7 +88,7 @@
             android:id="@+id/imageView28"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/border" />
+            android:background="@drawable/vignette" />
 
     </androidx.cardview.widget.CardView>
 

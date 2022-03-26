@@ -37,7 +37,8 @@ object Items {
     const val reinforcedHelmetIndex = 16
     const val ancientLightSaberIndex = 45
 
-
+    const val heroic = 5
+    const val legendary = 11
 
     init {
         itemsArray = arrayOf(
@@ -75,7 +76,7 @@ object Items {
             Item(armor, 3,armor, R.drawable.arm_t3_admiralsuniform,"clothing"),
             Item(armor, 3,armor, R.drawable.arm_t3_laminatearmor,"armor"),
             Item(armor, 3,armor, R.drawable.arm_t3_plastoidarmor,"armor"),
-            Item(melee, 1,melee, R.drawable.gun_t1_heroweapon,"impact"),
+            Item(melee, 1,melee, R.drawable.empty_item_slot,"impact"),
             //28
             Item(melee, 1,melee, R.drawable.mel_t1_armoredgauntlets,"impact"),
             Item(melee, 1,melee, R.drawable.mel_t1_gaffistick,"impact"),
@@ -107,7 +108,7 @@ object Items {
             Item(mod, 3,melee, R.drawable.mod_t3_shockemitter, ""),
             Item(mod, 3,melee, R.drawable.mod_t3_vibrogenerator, ""),
             //52
-            Item(ranged, 1,ranged, R.drawable.gun_t1_heroweapon,"blaster"),
+            Item(ranged, 1,ranged, R.drawable.empty_item_slot,"blaster"),
             Item(ranged, 1,ranged, R.drawable.gun_t1_chargedpistol,"blaster"),
             Item(ranged, 1,ranged, R.drawable.gun_t1_ddcdefender,"blaster"),
             Item(ranged, 1,ranged, R.drawable.gun_t1_dh17,"blaster"),
@@ -317,11 +318,9 @@ object Items {
             itemsArray!![19],
             itemsArray!![20],
 
-
             itemsArray!![21],
             itemsArray!![22],
             itemsArray!![23],
-
 
             itemsArray!![24],
             itemsArray!![25],
@@ -483,9 +482,9 @@ class Item() {
         this.tier = tier
         this.where = where
 
-        if (soundType == "slice") this.soundType = Sounds.shing
-        if (soundType == "lightSaber") this.soundType = Sounds.lightSaber
-        if (soundType == "electric") this.soundType =  Sounds.electric
+        if (soundType == "slice") this.soundType = Sounds.equip_blade
+        if (soundType == "lightSaber") this.soundType = Sounds.equip_gun
+        if (soundType == "electric") this.soundType =  Sounds.equip_electric
         if (soundType == "blaster") this.soundType =  Sounds.equip_gun
         if (soundType == "impact") this.soundType =  Sounds.equip_impact
         if (soundType == "armor") this.soundType =  Sounds.equip_armor
@@ -500,9 +499,9 @@ class Item() {
         this.tier = tier
         this.where = where
 
-        if (soundType == "slice") this.soundType = Sounds.shing
-        if (soundType == "lightSaber") this.soundType = Sounds.lightSaber
-        if (soundType == "electric") this.soundType =  Sounds.electric
+        if (soundType == "slice") this.soundType = Sounds.equip_blade
+        if (soundType == "lightSaber") this.soundType = Sounds.equip_gun
+        if (soundType == "electric") this.soundType =  Sounds.equip_electric
         if (soundType == "blaster") this.soundType =  Sounds.equip_gun
         if (soundType == "impact") this.soundType =  Sounds.equip_impact
         if (soundType == "armor") this.soundType =  Sounds.equip_armor

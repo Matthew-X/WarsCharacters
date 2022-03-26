@@ -10,6 +10,7 @@ class Character_murne : Character {
         //default values
         name = "Murne Rin"
         name_short = "murne"
+        index = 14
         type = "Hero"
         defence_dice = "black"
 
